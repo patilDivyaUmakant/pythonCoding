@@ -6,7 +6,7 @@ def clock() :
     tick = time.strftime("%H : %M : %S %p")
     label.config(text = tick) 
     label.after(1000,clock)
-label1 = Label(root,text = "Digital Clock",font = ("evolve-sans",20),bg = "black",fg = "red")
+label1 = Label(root,text = "Digital Clock",font = ("MADE Evolve Sans EVO",20),bg = "black",fg = "red")
 label = Label(root,font = ("DS-Digital",30),background = "black",foreground = "lime")
 # label1.pack()
 # label.pack()

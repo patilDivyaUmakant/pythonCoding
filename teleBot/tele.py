@@ -30,11 +30,12 @@ def summary(update , context) :
         # print (data)
         print (data["Date"][0:10])
         date = data["Date"][0:10]
-        result = f"Covid-19 summary - {date}"
+        result = f"Covid-19 summary - {date} \n"
         print (data["Global"])
         for att,value in data["Global"].items() : 
+          if att not in ["NewRecovered","TotalRecovered","Date"] : 
             print (att, value)
-
+            result += att +":"+ str(value) + "\n"
         context.bot.send_message(chat_id = update.effective_chat.id,text = result)
     else :
         context.bot.send_message(chat_id = update.effective_chat.id,text = "Something went wrong on Server!! ")  
