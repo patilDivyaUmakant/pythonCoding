@@ -26,6 +26,11 @@
 # var1 = fun(5,2)
 # print (var1)
 
-minus = lambda a,b : a-b
-print (minus(5,3))
+# minus = lambda a,b : a-b
+# print (minus(5,3))
 
+def fun() : 
+    return 12,24
+
+a,b = fun()
+print (a)
